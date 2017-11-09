@@ -15,6 +15,7 @@
 		2E0A78011FB3E2CD0057DCF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0A77FF1FB3E2CD0057DCF1 /* LaunchScreen.storyboard */; };
 		2E0A780C1FB3E2CD0057DCF1 /* SportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A780B1FB3E2CD0057DCF1 /* SportsTests.swift */; };
 		2E0A78171FB3E2CD0057DCF1 /* SportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A78161FB3E2CD0057DCF1 /* SportsUITests.swift */; };
+		2EA50ED11FB45336002C0701 /* tabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA50ED01FB45336002C0701 /* tabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2E0A78121FB3E2CD0057DCF1 /* SportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E0A78161FB3E2CD0057DCF1 /* SportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsUITests.swift; sourceTree = "<group>"; };
 		2E0A78181FB3E2CD0057DCF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA50ED01FB45336002C0701 /* tabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,7 @@
 		2E0A77F21FB3E2CD0057DCF1 /* Sports */ = {
 			isa = PBXGroup;
 			children = (
-				2E0A77F31FB3E2CD0057DCF1 /* AppDelegate.swift */,
-				2E0A77F51FB3E2CD0057DCF1 /* ViewController.swift */,
+				2EA50ECF1FB445F7002C0701 /* Controller */,
 				2E0A77F71FB3E2CD0057DCF1 /* Main.storyboard */,
 				2E0A77FD1FB3E2CD0057DCF1 /* Assets.xcassets */,
 				2E0A77FF1FB3E2CD0057DCF1 /* LaunchScreen.storyboard */,
@@ -126,6 +127,16 @@
 				2E0A78181FB3E2CD0057DCF1 /* Info.plist */,
 			);
 			path = SportsUITests;
+			sourceTree = "<group>";
+		};
+		2EA50ECF1FB445F7002C0701 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E0A77F51FB3E2CD0057DCF1 /* ViewController.swift */,
+				2E0A77F31FB3E2CD0057DCF1 /* AppDelegate.swift */,
+				2EA50ED01FB45336002C0701 /* tabViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA50ED11FB45336002C0701 /* tabViewController.swift in Sources */,
 				2E0A77F61FB3E2CD0057DCF1 /* ViewController.swift in Sources */,
 				2E0A77FC1FB3E2CD0057DCF1 /* Sports.xcdatamodeld in Sources */,
 				2E0A77F41FB3E2CD0057DCF1 /* AppDelegate.swift in Sources */,
@@ -516,6 +528,7 @@
 				2E0A781D1FB3E2CD0057DCF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E0A781E1FB3E2CD0057DCF1 /* Build configuration list for PBXNativeTarget "SportsTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				2E0A78201FB3E2CD0057DCF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E0A78211FB3E2CD0057DCF1 /* Build configuration list for PBXNativeTarget "SportsUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +546,7 @@
 				2E0A78231FB3E2CD0057DCF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
