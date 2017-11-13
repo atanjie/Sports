@@ -38,7 +38,7 @@
 	<key>NSApptransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>CFBundleGetInfoString</key>
 	<string></string>
