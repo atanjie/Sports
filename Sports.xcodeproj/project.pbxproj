@@ -16,6 +16,7 @@
 		2E0A780C1FB3E2CD0057DCF1 /* SportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A780B1FB3E2CD0057DCF1 /* SportsTests.swift */; };
 		2E0A78171FB3E2CD0057DCF1 /* SportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A78161FB3E2CD0057DCF1 /* SportsUITests.swift */; };
 		2EA50ED11FB45336002C0701 /* tabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA50ED01FB45336002C0701 /* tabViewController.swift */; };
+		ED80F7311FB9750F00203D41 /* countdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED80F7301FB9750F00203D41 /* countdownViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2E0A78161FB3E2CD0057DCF1 /* SportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsUITests.swift; sourceTree = "<group>"; };
 		2E0A78181FB3E2CD0057DCF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EA50ED01FB45336002C0701 /* tabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabViewController.swift; sourceTree = "<group>"; };
+		ED80F7301FB9750F00203D41 /* countdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countdownViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				2E0A77F51FB3E2CD0057DCF1 /* ViewController.swift */,
 				2E0A77F31FB3E2CD0057DCF1 /* AppDelegate.swift */,
 				2EA50ED01FB45336002C0701 /* tabViewController.swift */,
+				ED80F7301FB9750F00203D41 /* countdownViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				2EA50ED11FB45336002C0701 /* tabViewController.swift in Sources */,
 				2E0A77F61FB3E2CD0057DCF1 /* ViewController.swift in Sources */,
+				ED80F7311FB9750F00203D41 /* countdownViewController.swift in Sources */,
 				2E0A77FC1FB3E2CD0057DCF1 /* Sports.xcdatamodeld in Sources */,
 				2E0A77F41FB3E2CD0057DCF1 /* AppDelegate.swift in Sources */,
 			);
