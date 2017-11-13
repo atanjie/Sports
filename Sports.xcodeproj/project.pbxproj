@@ -15,6 +15,14 @@
 		2E0A78011FB3E2CD0057DCF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0A77FF1FB3E2CD0057DCF1 /* LaunchScreen.storyboard */; };
 		2E0A780C1FB3E2CD0057DCF1 /* SportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A780B1FB3E2CD0057DCF1 /* SportsTests.swift */; };
 		2E0A78171FB3E2CD0057DCF1 /* SportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A78161FB3E2CD0057DCF1 /* SportsUITests.swift */; };
+		DD2040211FB9BDFF000FF387 /* Events+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20401D1FB9BDFF000FF387 /* Events+CoreDataClass.swift */; };
+		DD2040221FB9BDFF000FF387 /* Events+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20401E1FB9BDFF000FF387 /* Events+CoreDataProperties.swift */; };
+		DD2040231FB9BDFF000FF387 /* Schedule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20401F1FB9BDFF000FF387 /* Schedule+CoreDataClass.swift */; };
+		DD2040241FB9BDFF000FF387 /* Schedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2040201FB9BDFF000FF387 /* Schedule+CoreDataProperties.swift */; };
+		DDD3034E1FB52CD90036FB62 /* EventsDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD3034D1FB52CD90036FB62 /* EventsDao.swift */; };
+		DDF2085C1FB47FAC000A867C /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF2085B1FB47FAC000A867C /* EventsModel.swift */; };
+		DDF829391FB96AD70080457D /* ScheduleDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF829381FB96AD70080457D /* ScheduleDao.swift */; };
+		DDF8293B1FB96B2C0080457D /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8293A1FB96B2B0080457D /* ScheduleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		2E0A78121FB3E2CD0057DCF1 /* SportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E0A78161FB3E2CD0057DCF1 /* SportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsUITests.swift; sourceTree = "<group>"; };
 		2E0A78181FB3E2CD0057DCF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD20401D1FB9BDFF000FF387 /* Events+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Events+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DD20401E1FB9BDFF000FF387 /* Events+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Events+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD20401F1FB9BDFF000FF387 /* Schedule+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DD2040201FB9BDFF000FF387 /* Schedule+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DDD3034D1FB52CD90036FB62 /* EventsDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDao.swift; sourceTree = "<group>"; };
+		DDF2085B1FB47FAC000A867C /* EventsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
+		DDF829381FB96AD70080457D /* ScheduleDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleDao.swift; sourceTree = "<group>"; };
+		DDF8293A1FB96B2B0080457D /* ScheduleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,10 @@
 		2E0A77E71FB3E2CC0057DCF1 = {
 			isa = PBXGroup;
 			children = (
+				DD20401D1FB9BDFF000FF387 /* Events+CoreDataClass.swift */,
+				DD20401E1FB9BDFF000FF387 /* Events+CoreDataProperties.swift */,
+				DD20401F1FB9BDFF000FF387 /* Schedule+CoreDataClass.swift */,
+				DD2040201FB9BDFF000FF387 /* Schedule+CoreDataProperties.swift */,
 				2E0A77F21FB3E2CD0057DCF1 /* Sports */,
 				2E0A780A1FB3E2CD0057DCF1 /* SportsTests */,
 				2E0A78151FB3E2CD0057DCF1 /* SportsUITests */,
@@ -99,6 +119,8 @@
 		2E0A77F21FB3E2CD0057DCF1 /* Sports */ = {
 			isa = PBXGroup;
 			children = (
+				DDD3034C1FB52C640036FB62 /* BaseDao */,
+				DDF208411FB469BB000A867C /* model */,
 				2E0A77F31FB3E2CD0057DCF1 /* AppDelegate.swift */,
 				2E0A77F51FB3E2CD0057DCF1 /* ViewController.swift */,
 				2E0A77F71FB3E2CD0057DCF1 /* Main.storyboard */,
@@ -126,6 +148,24 @@
 				2E0A78181FB3E2CD0057DCF1 /* Info.plist */,
 			);
 			path = SportsUITests;
+			sourceTree = "<group>";
+		};
+		DDD3034C1FB52C640036FB62 /* BaseDao */ = {
+			isa = PBXGroup;
+			children = (
+				DDD3034D1FB52CD90036FB62 /* EventsDao.swift */,
+				DDF829381FB96AD70080457D /* ScheduleDao.swift */,
+			);
+			name = BaseDao;
+			sourceTree = "<group>";
+		};
+		DDF208411FB469BB000A867C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DDF2085B1FB47FAC000A867C /* EventsModel.swift */,
+				DDF8293A1FB96B2B0080457D /* ScheduleModel.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +236,6 @@
 				TargetAttributes = {
 					2E0A77EF1FB3E2CD0057DCF1 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = CN5C983U6P;
 						ProvisioningStyle = Automatic;
 					};
 					2E0A78061FB3E2CD0057DCF1 = {
@@ -267,7 +306,15 @@
 			files = (
 				2E0A77F61FB3E2CD0057DCF1 /* ViewController.swift in Sources */,
 				2E0A77FC1FB3E2CD0057DCF1 /* Sports.xcdatamodeld in Sources */,
+				DDF2085C1FB47FAC000A867C /* EventsModel.swift in Sources */,
+				DDF829391FB96AD70080457D /* ScheduleDao.swift in Sources */,
+				DD2040231FB9BDFF000FF387 /* Schedule+CoreDataClass.swift in Sources */,
 				2E0A77F41FB3E2CD0057DCF1 /* AppDelegate.swift in Sources */,
+				DD2040221FB9BDFF000FF387 /* Events+CoreDataProperties.swift in Sources */,
+				DD2040241FB9BDFF000FF387 /* Schedule+CoreDataProperties.swift in Sources */,
+				DDD3034E1FB52CD90036FB62 /* EventsDao.swift in Sources */,
+				DD2040211FB9BDFF000FF387 /* Events+CoreDataClass.swift in Sources */,
+				DDF8293B1FB96B2C0080457D /* ScheduleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +464,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CN5C983U6P;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Sports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = abc.Sports;
@@ -430,7 +478,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CN5C983U6P;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Sports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = abc.Sports;
@@ -516,6 +565,7 @@
 				2E0A781D1FB3E2CD0057DCF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E0A781E1FB3E2CD0057DCF1 /* Build configuration list for PBXNativeTarget "SportsTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +574,7 @@
 				2E0A78201FB3E2CD0057DCF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E0A78211FB3E2CD0057DCF1 /* Build configuration list for PBXNativeTarget "SportsUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +583,7 @@
 				2E0A78231FB3E2CD0057DCF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
