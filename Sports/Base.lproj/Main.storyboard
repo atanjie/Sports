@@ -53,7 +53,7 @@
         <!--运动项目-->
         <scene sceneID="ddf-aN-t74">
             <objects>
-                <collectionViewController title="运动项目" id="c7w-Wg-R8c" sceneMemberID="viewController">
+                <collectionViewController title="运动项目" id="c7w-Wg-R8c" customClass="SportprojectViewController" customModule="Sports" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="cSK-Jc-8ra">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +107,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HQu-Np-p1R" id="uqY-bH-BMb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -161,18 +161,24 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="nqt-SP-VCS" firstAttribute="top" secondItem="lN6-f8-g0K" secondAttribute="bottom" constant="109" id="5RK-pP-xBb"/>
-                            <constraint firstAttribute="trailing" secondItem="nqt-SP-VCS" secondAttribute="trailing" constant="148" id="EgI-Jn-PzY"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="倒计时" id="D7L-31-kYm"/>
-                    <connections>
-                        <outlet property="countdownlab" destination="nqt-SP-VCS" id="5Uw-Wc-rK5"/>
-                        <outlet property="lblCountDown" destination="nqt-SP-VCS" id="Ok4-Gx-z8s"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JbB-gu-wPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mMW-Lb-JXu">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mMW-Lb-JXu" id="3Al-56-xvn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0NA-C2-LSa" id="hB8-ZQ-DGO"/>
+                            <outlet property="delegate" destination="0NA-C2-LSa" id="AmB-k9-ZSj"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="倒计时" id="oQ2-Lm-uJK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rg1-WT-tfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="466" y="1509"/>
         </scene>
