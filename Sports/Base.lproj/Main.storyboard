@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jte-qf-bLN">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jte-qf-bLN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,8 +37,8 @@
         <scene sceneID="ISI-k7-KjC">
             <objects>
                 <navigationController id="O0I-GJ-okw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="赛程" id="Z04-KI-lND"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Lc6-XP-2LY">
+                    <tabBarItem key="tabBarItem" title="赛程" image="Schedule" id="Z04-KI-lND"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lc6-XP-2LY">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -72,7 +72,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="倒计时" id="13m-Po-iQe"/>
+                    <tabBarItem key="tabBarItem" title="倒计时" image="CountDown" id="13m-Po-iQe"/>
                     <connections>
                         <outlet property="lblCountDown" destination="T3G-yU-8RB" id="bgZ-jO-iBg"/>
                     </connections>
@@ -138,7 +138,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HQu-Np-p1R" id="uqY-bH-BMb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -183,20 +183,26 @@
                     <view key="view" contentMode="scaleToFill" id="zGp-ui-hqm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="About-bg-iphone" translatesAutoresizingMaskIntoConstraints="NO" id="dIn-Dh-2eG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="关于我们" id="Ise-na-36a"/>
+                    <tabBarItem key="tabBarItem" title="关于我们" image="About" id="Ise-na-36a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5N4-XE-wsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="1511"/>
+            <point key="canvasLocation" x="1180" y="1510.7946026986508"/>
         </scene>
         <!--项目-->
         <scene sceneID="Vyb-40-Hbo">
             <objects>
                 <navigationController id="GUA-vO-LPM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="项目" id="tuu-fn-IZP"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4Ao-5j-ia8">
+                    <tabBarItem key="tabBarItem" title="项目" image="Events" id="tuu-fn-IZP"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Ao-5j-ia8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -219,13 +225,28 @@
                     <view key="view" contentMode="scaleToFill" id="mF0-QB-rs4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home-bg-iphone" translatesAutoresizingMaskIntoConstraints="NO" id="Lal-jT-gwf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="主页" id="vCX-4r-1WZ"/>
+                    <tabBarItem key="tabBarItem" title="主页" image="Home" id="vCX-4r-1WZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgc-xY-7AD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1892" y="1496"/>
+            <point key="canvasLocation" x="-1892" y="1495.5022488755624"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="About" width="30" height="30"/>
+        <image name="About-bg-iphone" width="640" height="960"/>
+        <image name="CountDown" width="30" height="30"/>
+        <image name="Events" width="30" height="30"/>
+        <image name="Home" width="30" height="30"/>
+        <image name="Home-bg-iphone" width="640" height="960"/>
+        <image name="Schedule" width="30" height="30"/>
+    </resources>
 </document>
