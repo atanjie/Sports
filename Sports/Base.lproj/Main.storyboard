@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jte-qf-bLN">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jte-qf-bLN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +25,6 @@
                         <segue destination="Egj-cq-BZP" kind="relationship" relationship="viewControllers" id="kSA-fd-u1s"/>
                         <segue destination="GUA-vO-LPM" kind="relationship" relationship="viewControllers" id="cmn-Jq-2Nz"/>
                         <segue destination="O0I-GJ-okw" kind="relationship" relationship="viewControllers" id="qLH-g1-cAC"/>
-                        <segue destination="pfe-fz-2Sh" kind="relationship" relationship="viewControllers" id="xbx-UJ-qZH"/>
                         <segue destination="UdT-fW-6Wd" kind="relationship" relationship="viewControllers" id="4pq-MG-U86"/>
                     </connections>
                 </tabBarController>
@@ -34,11 +33,12 @@
             <point key="canvasLocation" x="-454" y="-33"/>
         </scene>
         <!--赛程-->
+        
         <scene sceneID="ISI-k7-KjC">
             <objects>
                 <navigationController id="O0I-GJ-okw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="赛程" id="Z04-KI-lND"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lc6-XP-2LY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Lc6-XP-2LY">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -54,7 +54,7 @@
         <scene sceneID="ddf-aN-t74">
             <objects>
                 <collectionViewController title="运动项目" id="c7w-Wg-R8c" customClass="SportprojectViewController" customModule="Sports" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="cSK-Jc-8ra">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="cSK-Jc-8ra">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,6 +94,7 @@
             </objects>
             <point key="canvasLocation" x="-1063.2" y="2185.4572713643179"/>
         </scene>
+        
         <!--赛程表-->
         <scene sceneID="prI-l9-k2b">
             <objects>
@@ -107,7 +108,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HQu-Np-p1R" id="uqY-bH-BMb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -141,47 +142,6 @@
             </objects>
             <point key="canvasLocation" x="-1063" y="2922"/>
         </scene>
-        <!--倒计时-->
-        <scene sceneID="hCr-2d-Chg">
-            <objects>
-                <viewController id="pfe-fz-2Sh" customClass="countdownViewController" customModule="Sports" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lN6-f8-g0K"/>
-                        <viewControllerLayoutGuide type="bottom" id="u5c-TM-5yR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fRG-zJ-icB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqt-SP-VCS">
-                                <rect key="frame" x="147" y="129" width="80" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mMW-Lb-JXu">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mMW-Lb-JXu" id="3Al-56-xvn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="0NA-C2-LSa" id="hB8-ZQ-DGO"/>
-                            <outlet property="delegate" destination="0NA-C2-LSa" id="AmB-k9-ZSj"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="倒计时" id="oQ2-Lm-uJK"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rg1-WT-tfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="466" y="1509"/>
-        </scene>
         <!--关于我们-->
         <scene sceneID="hPs-Bc-Kpo">
             <objects>
@@ -206,7 +166,7 @@
             <objects>
                 <navigationController id="GUA-vO-LPM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="项目" id="tuu-fn-IZP"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Ao-5j-ia8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4Ao-5j-ia8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
