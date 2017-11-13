@@ -60,6 +60,7 @@
 		2EF7E4111FB96FCB00381140 /* wrestling.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2EF7E3E71FB96FCB00381140 /* wrestling.gif */; };
 		2EF7E4131FB9718900381140 /* SportprojectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7E4121FB9718900381140 /* SportprojectViewController.swift */; };
 		2EF7E4151FB971C000381140 /* SportsprojectViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7E4141FB971C000381140 /* SportsprojectViewCell.swift */; };
+		ED0167F11FB98E550095294E /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0167F01FB98E550095294E /* CountDownViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		2EF7E3E71FB96FCB00381140 /* wrestling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wrestling.gif; sourceTree = "<group>"; };
 		2EF7E4121FB9718900381140 /* SportprojectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportprojectViewController.swift; sourceTree = "<group>"; };
 		2EF7E4141FB971C000381140 /* SportsprojectViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsprojectViewCell.swift; sourceTree = "<group>"; };
+		ED0167F01FB98E550095294E /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 				2EA50ED01FB45336002C0701 /* tabViewController.swift */,
 				2EF7E4121FB9718900381140 /* SportprojectViewController.swift */,
 				2EF7E4141FB971C000381140 /* SportsprojectViewCell.swift */,
+				ED0167F01FB98E550095294E /* CountDownViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				2EF7E4151FB971C000381140 /* SportsprojectViewCell.swift in Sources */,
 				2E0A77FC1FB3E2CD0057DCF1 /* Sports.xcdatamodeld in Sources */,
 				2E0A77F41FB3E2CD0057DCF1 /* AppDelegate.swift in Sources */,
+				ED0167F11FB98E550095294E /* CountDownViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

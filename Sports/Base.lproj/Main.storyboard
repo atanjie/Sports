@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jte-qf-bLN">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jte-qf-bLN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +25,8 @@
                         <segue destination="Egj-cq-BZP" kind="relationship" relationship="viewControllers" id="kSA-fd-u1s"/>
                         <segue destination="GUA-vO-LPM" kind="relationship" relationship="viewControllers" id="cmn-Jq-2Nz"/>
                         <segue destination="O0I-GJ-okw" kind="relationship" relationship="viewControllers" id="qLH-g1-cAC"/>
-                        <segue destination="UdT-fW-6Wd" kind="relationship" relationship="viewControllers" id="4pq-MG-U86"/>
+                        <segue destination="0bA-hh-YJR" kind="relationship" relationship="viewControllers" id="nfD-o3-3ml"/>
+                        <segue destination="UdT-fW-6Wd" kind="relationship" relationship="viewControllers" id="OsQ-FF-1Wa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ngs-3M-ji2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -33,7 +34,6 @@
             <point key="canvasLocation" x="-454" y="-33"/>
         </scene>
         <!--赛程-->
-        
         <scene sceneID="ISI-k7-KjC">
             <objects>
                 <navigationController id="O0I-GJ-okw" sceneMemberID="viewController">
@@ -50,11 +50,42 @@
             </objects>
             <point key="canvasLocation" x="-298" y="1496"/>
         </scene>
+        <!--倒计时-->
+        <scene sceneID="Xic-Ji-C5R">
+            <objects>
+                <viewController id="0bA-hh-YJR" customClass="CountDownViewController" customModule="Sports" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yRu-Ck-a0G"/>
+                        <viewControllerLayoutGuide type="bottom" id="cPf-qU-VX4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BIm-d7-WTJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3G-yU-8RB">
+                                <rect key="frame" x="166" y="88" width="80" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="倒计时" id="13m-Po-iQe"/>
+                    <connections>
+                        <outlet property="lblCountDown" destination="T3G-yU-8RB" id="bgZ-jO-iBg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IsX-bM-Lge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="1494"/>
+        </scene>
         <!--运动项目-->
         <scene sceneID="ddf-aN-t74">
             <objects>
                 <collectionViewController title="运动项目" id="c7w-Wg-R8c" customClass="SportprojectViewController" customModule="Sports" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="cSK-Jc-8ra">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="cSK-Jc-8ra">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,7 +125,6 @@
             </objects>
             <point key="canvasLocation" x="-1063.2" y="2185.4572713643179"/>
         </scene>
-        
         <!--赛程表-->
         <scene sceneID="prI-l9-k2b">
             <objects>
@@ -108,7 +138,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HQu-Np-p1R" id="uqY-bH-BMb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
