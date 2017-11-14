@@ -171,6 +171,10 @@
 		2E0A77E71FB3E2CC0057DCF1 = {
 			isa = PBXGroup;
 			children = (
+				DD20401D1FB9BDFF000FF387 /* Events+CoreDataClass.swift */,
+				DD20401E1FB9BDFF000FF387 /* Events+CoreDataProperties.swift */,
+				DD20401F1FB9BDFF000FF387 /* Schedule+CoreDataClass.swift */,
+				DD2040201FB9BDFF000FF387 /* Schedule+CoreDataProperties.swift */,
 				2E0A77F21FB3E2CD0057DCF1 /* Sports */,
 				2E0A780A1FB3E2CD0057DCF1 /* SportsTests */,
 				2E0A78151FB3E2CD0057DCF1 /* SportsUITests */,
@@ -358,7 +362,6 @@
 				TargetAttributes = {
 					2E0A77EF1FB3E2CD0057DCF1 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = CN5C983U6P;
 						ProvisioningStyle = Automatic;
 					};
 					2E0A78061FB3E2CD0057DCF1 = {
@@ -474,6 +477,9 @@
 				2E0A77F61FB3E2CD0057DCF1 /* ViewController.swift in Sources */,
 				2EF7E4151FB971C000381140 /* SportsprojectViewCell.swift in Sources */,
 				2E0A77FC1FB3E2CD0057DCF1 /* Sports.xcdatamodeld in Sources */,
+				DDF2085C1FB47FAC000A867C /* EventsModel.swift in Sources */,
+				DDF829391FB96AD70080457D /* ScheduleDao.swift in Sources */,
+				DD2040231FB9BDFF000FF387 /* Schedule+CoreDataClass.swift in Sources */,
 				2E0A77F41FB3E2CD0057DCF1 /* AppDelegate.swift in Sources */,
 				ED0167F31FB994070095294E /* CountDownViewController.swift in Sources */,
 			);
@@ -625,7 +631,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CN5C983U6P;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Sports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = abc.Sports;
@@ -638,7 +645,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CN5C983U6P;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Sports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = abc.Sports;
