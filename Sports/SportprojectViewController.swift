@@ -15,6 +15,7 @@ class SportprojectViewController: UICollectionViewController {
     
     var events : NSArray!
     var p:[EventsModel] = Array<EventsModel>()
+    var prams:paramsProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ class SportprojectViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 4
     }
 
 
@@ -48,8 +49,11 @@ class SportprojectViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SportsprojectViewCell
-        cell.Sports_Image.image = UIImage(named: p[indexPath.row].icon!)
+        cell.Sports_Image.image = UIImage(named: p[indexPath.section*2+indexPath.row].icon!)
         return cell
+    }
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print(1)
     }
     
     func getdata() {
@@ -57,7 +61,20 @@ class SportprojectViewController: UICollectionViewController {
         let evt = EventsDao()
          p = evt.getEvents(eve)
     }
-
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.collectionView!.deselectItem(at: indexPath, animated: true)
+//        let selectweek = p[indexPath.section*2+indexPath.row].id
+//        let alertController = UIAlertView()
+//        alertController.title = "提示"
+//        alertController.message = "你选择了\(p[indexPath.section*2+indexPath.row].id)"
+//        alertController.addButton(withTitle: "ok")
+//        alertController.show()
+        self.prams?.returnparams(tmpid:  Int(p[indexPath.section*2+indexPath.row].id))
+        let secondViewController = eventViewController()
+        self.present(secondViewController, animated: true, completion: nil)
+        
+    }
+    
     // MARK: UICollectionViewDelegate
 
     /*
@@ -90,3 +107,4 @@ class SportprojectViewController: UICollectionViewController {
     */
 
 }
+

@@ -198,7 +198,7 @@
         <!--项目详细-->
         <scene sceneID="kCl-aO-d94">
             <objects>
-                <viewController title="项目详细" id="7c1-7W-IdK" sceneMemberID="viewController">
+                <viewController title="项目详细" id="7c1-7W-IdK" customClass="eventViewController" customModule="Sports" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hnH-6G-OIe"/>
                         <viewControllerLayoutGuide type="bottom" id="6X7-JS-ycx"/>

@@ -16,6 +16,8 @@
 		2E0A780C1FB3E2CD0057DCF1 /* SportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A780B1FB3E2CD0057DCF1 /* SportsTests.swift */; };
 		2E0A78171FB3E2CD0057DCF1 /* SportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0A78161FB3E2CD0057DCF1 /* SportsUITests.swift */; };
 		2E82863F1FBAD7EF008CC16E /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E82863E1FBAD7EF008CC16E /* DataTableViewController.swift */; };
+		2E8286411FBAE763008CC16E /* eventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8286401FBAE763008CC16E /* eventViewController.swift */; };
+		2E8286431FBAE946008CC16E /* paramid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8286421FBAE946008CC16E /* paramid.swift */; };
 		2EA50ED11FB45336002C0701 /* tabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA50ED01FB45336002C0701 /* tabViewController.swift */; };
 		2EF7E3E81FB96FCB00381140 /* archery.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2EF7E3BE1FB96FCA00381140 /* archery.gif */; };
 		2EF7E3E91FB96FCB00381140 /* athletics.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2EF7E3BF1FB96FCA00381140 /* athletics.gif */; };
@@ -106,6 +108,8 @@
 		2E0A78161FB3E2CD0057DCF1 /* SportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsUITests.swift; sourceTree = "<group>"; };
 		2E0A78181FB3E2CD0057DCF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E82863E1FBAD7EF008CC16E /* DataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
+		2E8286401FBAE763008CC16E /* eventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventViewController.swift; sourceTree = "<group>"; };
+		2E8286421FBAE946008CC16E /* paramid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paramid.swift; sourceTree = "<group>"; };
 		2EA50ED01FB45336002C0701 /* tabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabViewController.swift; sourceTree = "<group>"; };
 		2EF7E3BE1FB96FCA00381140 /* archery.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = archery.gif; sourceTree = "<group>"; };
 		2EF7E3BF1FB96FCA00381140 /* athletics.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = athletics.gif; sourceTree = "<group>"; };
@@ -257,6 +261,8 @@
 				2EF7E4121FB9718900381140 /* SportprojectViewController.swift */,
 				2EF7E4141FB971C000381140 /* SportsprojectViewCell.swift */,
 				2E82863E1FBAD7EF008CC16E /* DataTableViewController.swift */,
+				2E8286401FBAE763008CC16E /* eventViewController.swift */,
+				2E8286421FBAE946008CC16E /* paramid.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -521,6 +527,8 @@
 				ED8C2B581FBA92E800AC709D /* ScheduleModel.swift in Sources */,
 				2EF7E4151FB971C000381140 /* SportsprojectViewCell.swift in Sources */,
 				2E0A77FC1FB3E2CD0057DCF1 /* Sports.xcdatamodeld in Sources */,
+				2E8286431FBAE946008CC16E /* paramid.swift in Sources */,
+				2E8286411FBAE763008CC16E /* eventViewController.swift in Sources */,
 				ED8C2B641FBA931000AC709D /* Events+CoreDataClass.swift in Sources */,
 				ED8C2B631FBA931000AC709D /* Schedule+CoreDataProperties.swift in Sources */,
 				2E0A77F41FB3E2CD0057DCF1 /* AppDelegate.swift in Sources */,
