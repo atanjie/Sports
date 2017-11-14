@@ -25,4 +25,12 @@ class EventsModel {
         self.keyInfo = keyInfo
         self.olympicInfo = olympicInfo
     }
+    init(_ id:Int32,name:String,_ icon:String,_ keyInfo:String,_ basicInfo:String,_ olympicInfo:String) {
+                self.id = id
+                   self.name = name
+                   self.basicInfo = basicInfo
+                    self.icon = icon
+                    self.keyInfo = keyInfo
+                   self.olympicInfo = olympicInfo
+            }
 }
