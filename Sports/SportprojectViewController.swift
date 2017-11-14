@@ -12,7 +12,10 @@ private let reuseIdentifier = "Cell"
 
 class SportprojectViewController: UICollectionViewController {
     
+    
     var events : NSArray!
+    var p:[EventsModel] = Array<EventsModel>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +24,7 @@ class SportprojectViewController: UICollectionViewController {
         // Register cell classes
         collectionView?.delegate = self
         collectionView?.dataSource = self
+        getdata()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,9 +48,14 @@ class SportprojectViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SportsprojectViewCell
-        cell.Sports_Image.image = UIImage(named: "archery.gif")
-    
+        cell.Sports_Image.image = UIImage(named: p[indexPath.row].icon!)
         return cell
+    }
+    
+    func getdata() {
+        let eve = EventsModel(0, "", "", "", "", "")
+        let evt = EventsDao()
+         p = evt.getEvents(eve)
     }
 
     // MARK: UICollectionViewDelegate
