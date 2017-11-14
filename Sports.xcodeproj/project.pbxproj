@@ -61,6 +61,16 @@
 		2EF7E4131FB9718900381140 /* SportprojectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7E4121FB9718900381140 /* SportprojectViewController.swift */; };
 		2EF7E4151FB971C000381140 /* SportsprojectViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7E4141FB971C000381140 /* SportsprojectViewCell.swift */; };
 		ED0167F31FB994070095294E /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0167F21FB994060095294E /* CountDownViewController.swift */; };
+		ED8C2B571FBA92E800AC709D /* Sports.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED8C2B4F1FBA92E700AC709D /* Sports.xcdatamodeld */; };
+		ED8C2B581FBA92E800AC709D /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8C2B511FBA92E700AC709D /* ScheduleModel.swift */; };
+		ED8C2B5A1FBA92E800AC709D /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8C2B531FBA92E800AC709D /* EventsModel.swift */; };
+		ED8C2B5B1FBA92E800AC709D /* ScheduleDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8C2B541FBA92E800AC709D /* ScheduleDao.swift */; };
+		ED8C2B5C1FBA92E800AC709D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8C2B551FBA92E800AC709D /* Assets.xcassets */; };
+		ED8C2B5D1FBA92E800AC709D /* EventsDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8C2B561FBA92E800AC709D /* EventsDao.swift */; };
+		ED8C2B621FBA931000AC709D /* Schedule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8C2B5E1FBA930F00AC709D /* Schedule+CoreDataClass.swift */; };
+		ED8C2B631FBA931000AC709D /* Schedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8C2B5F1FBA930F00AC709D /* Schedule+CoreDataProperties.swift */; };
+		ED8C2B641FBA931000AC709D /* Events+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8C2B601FBA930F00AC709D /* Events+CoreDataClass.swift */; };
+		ED8C2B651FBA931000AC709D /* Events+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8C2B611FBA931000AC709D /* Events+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +151,16 @@
 		2EF7E4121FB9718900381140 /* SportprojectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportprojectViewController.swift; sourceTree = "<group>"; };
 		2EF7E4141FB971C000381140 /* SportsprojectViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsprojectViewCell.swift; sourceTree = "<group>"; };
 		ED0167F21FB994060095294E /* CountDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
+		ED8C2B501FBA92E700AC709D /* Sports.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sports.xcdatamodel; sourceTree = "<group>"; };
+		ED8C2B511FBA92E700AC709D /* ScheduleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
+		ED8C2B531FBA92E800AC709D /* EventsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
+		ED8C2B541FBA92E800AC709D /* ScheduleDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleDao.swift; sourceTree = "<group>"; };
+		ED8C2B551FBA92E800AC709D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sports/Assets.xcassets; sourceTree = "<group>"; };
+		ED8C2B561FBA92E800AC709D /* EventsDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDao.swift; sourceTree = "<group>"; };
+		ED8C2B5E1FBA930F00AC709D /* Schedule+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED8C2B5F1FBA930F00AC709D /* Schedule+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ED8C2B601FBA930F00AC709D /* Events+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Events+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ED8C2B611FBA931000AC709D /* Events+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Events+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,10 +191,13 @@
 		2E0A77E71FB3E2CC0057DCF1 = {
 			isa = PBXGroup;
 			children = (
-				DD20401D1FB9BDFF000FF387 /* Events+CoreDataClass.swift */,
-				DD20401E1FB9BDFF000FF387 /* Events+CoreDataProperties.swift */,
-				DD20401F1FB9BDFF000FF387 /* Schedule+CoreDataClass.swift */,
-				DD2040201FB9BDFF000FF387 /* Schedule+CoreDataProperties.swift */,
+				ED8C2B661FBA935000AC709D /* dao */,
+				ED8C2B601FBA930F00AC709D /* Events+CoreDataClass.swift */,
+				ED8C2B611FBA931000AC709D /* Events+CoreDataProperties.swift */,
+				ED8C2B5E1FBA930F00AC709D /* Schedule+CoreDataClass.swift */,
+				ED8C2B5F1FBA930F00AC709D /* Schedule+CoreDataProperties.swift */,
+				ED8C2B551FBA92E800AC709D /* Assets.xcassets */,
+				ED8C2B4F1FBA92E700AC709D /* Sports.xcdatamodeld */,
 				2E0A77F21FB3E2CD0057DCF1 /* Sports */,
 				2E0A780A1FB3E2CD0057DCF1 /* SportsTests */,
 				2E0A78151FB3E2CD0057DCF1 /* SportsUITests */,
@@ -292,6 +315,17 @@
 				2EF7E3E71FB96FCB00381140 /* wrestling.gif */,
 			);
 			name = events;
+			sourceTree = "<group>";
+		};
+		ED8C2B661FBA935000AC709D /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				ED8C2B511FBA92E700AC709D /* ScheduleModel.swift */,
+				ED8C2B541FBA92E800AC709D /* ScheduleDao.swift */,
+				ED8C2B531FBA92E800AC709D /* EventsModel.swift */,
+				ED8C2B561FBA92E800AC709D /* EventsDao.swift */,
+			);
+			path = dao;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +461,7 @@
 				2EF7E4091FB96FCB00381140 /* synchronised-swimming.gif in Resources */,
 				2EF7E3F51FB96FCB00381140 /* equestrian-dressage.gif in Resources */,
 				2EF7E3F11FB96FCB00381140 /* cycling-mountain-bike.gif in Resources */,
+				ED8C2B5C1FBA92E800AC709D /* Assets.xcassets in Resources */,
 				2EF7E3FA1FB96FCB00381140 /* ganlanqiu.gif in Resources */,
 				2EF7E3ED1FB96FCB00381140 /* boxing.gif in Resources */,
 				2EF7E4111FB96FCB00381140 /* wrestling.gif in Resources */,
@@ -475,12 +510,18 @@
 				2EA50ED11FB45336002C0701 /* tabViewController.swift in Sources */,
 				2EF7E4131FB9718900381140 /* SportprojectViewController.swift in Sources */,
 				2E0A77F61FB3E2CD0057DCF1 /* ViewController.swift in Sources */,
+				ED8C2B581FBA92E800AC709D /* ScheduleModel.swift in Sources */,
 				2EF7E4151FB971C000381140 /* SportsprojectViewCell.swift in Sources */,
 				2E0A77FC1FB3E2CD0057DCF1 /* Sports.xcdatamodeld in Sources */,
-				DDF2085C1FB47FAC000A867C /* EventsModel.swift in Sources */,
-				DDF829391FB96AD70080457D /* ScheduleDao.swift in Sources */,
-				DD2040231FB9BDFF000FF387 /* Schedule+CoreDataClass.swift in Sources */,
+				ED8C2B641FBA931000AC709D /* Events+CoreDataClass.swift in Sources */,
+				ED8C2B631FBA931000AC709D /* Schedule+CoreDataProperties.swift in Sources */,
 				2E0A77F41FB3E2CD0057DCF1 /* AppDelegate.swift in Sources */,
+				ED8C2B5D1FBA92E800AC709D /* EventsDao.swift in Sources */,
+				ED8C2B651FBA931000AC709D /* Events+CoreDataProperties.swift in Sources */,
+				ED8C2B571FBA92E800AC709D /* Sports.xcdatamodeld in Sources */,
+				ED8C2B621FBA931000AC709D /* Schedule+CoreDataClass.swift in Sources */,
+				ED8C2B5A1FBA92E800AC709D /* EventsModel.swift in Sources */,
+				ED8C2B5B1FBA92E800AC709D /* ScheduleDao.swift in Sources */,
 				ED0167F31FB994070095294E /* CountDownViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -762,6 +803,17 @@
 			);
 			currentVersion = 2E0A77FB1FB3E2CD0057DCF1 /* Sports.xcdatamodel */;
 			path = Sports.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		ED8C2B4F1FBA92E700AC709D /* Sports.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ED8C2B501FBA92E700AC709D /* Sports.xcdatamodel */,
+			);
+			currentVersion = ED8C2B501FBA92E700AC709D /* Sports.xcdatamodel */;
+			name = Sports.xcdatamodeld;
+			path = Sports/Sports.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
