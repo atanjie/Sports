@@ -35,8 +35,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func addS(_ sender: Any) {
-        let s = ScheduleModel(1, 1, "2017-11-11", "12:30", "ceshi")
-        ScheduleDao().addSchedule(s)
+        
     }
     @IBAction func readS(_ sender: Any) {
         let s = ScheduleModel(id: 1, eid: 1, gameDate: "2017-11-11", gameTime: "12:30", info: "ceshi",startGameDate: "2017-11-11",endGameDate: "",startGameTime: "",endGameTime: "")
@@ -47,6 +46,20 @@ class ViewController: UIViewController {
         }
         
     }
+    @IBAction func addSchedule(_ sender: Any) {
+        let s = ScheduleModel(20, 24, "2016-08-14", "10:30", "Men''s")
+        ScheduleDao().addSchedule(s)
+        print("true")
+    }
 
+    @IBAction func read(_ sender: Any) {
+         let s = ScheduleModel(id: 0, eid:0, gameDate: "", gameTime: "", info: "",startGameDate: "",endGameDate: "",startGameTime: "",endGameTime: "")
+        let a = ScheduleDao()
+        let list = a.getSchedule(s)
+        for i in list{
+            print(i.info)
+        }
+
+    }
 }
 
