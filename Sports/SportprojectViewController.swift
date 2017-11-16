@@ -15,7 +15,8 @@ class SportprojectViewController: UICollectionViewController {
     
     var events : NSArray!
     var p:[EventsModel] = Array<EventsModel>()
-    var prams:paramsProtocol?
+    weak var delegate: LTDelegate?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,7 +70,7 @@ class SportprojectViewController: UICollectionViewController {
 //        alertController.message = "你选择了\(p[indexPath.section*2+indexPath.row].id)"
 //        alertController.addButton(withTitle: "ok")
 //        alertController.show()
-        self.prams?.returnparams(tmpid:  Int(p[indexPath.section*2+indexPath.row].id))
+        delegate?.postValueToUpPage(str:Int(p[indexPath.section*2+indexPath.row].id) )
         let secondViewController = eventViewController()
         self.present(secondViewController, animated: true, completion: nil)
         
@@ -106,5 +107,8 @@ class SportprojectViewController: UICollectionViewController {
     }
     */
 
+}
+protocol LTDelegate: NSObjectProtocol {
+    func postValueToUpPage(str: Int)
 }
 
