@@ -11,11 +11,11 @@ import UIKit
 class eventViewController: UIViewController{
     var getid:Int!
     var para:paramsProtocol?
-
-
+    weak var delegate: LTDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.delegate = self as! LTDelegate
         let selectweek = getid
         
                 let alertController = UIAlertView()
@@ -41,5 +41,14 @@ class eventViewController: UIViewController{
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
+extension eventViewController: LTDelegate {
+    func postValueToUpPage(str: Int) {
+        getid=str
+    }
+    
+    
+}
+
+
