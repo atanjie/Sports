@@ -13,16 +13,17 @@ class eventViewController: UIViewController{
     var para:paramsProtocol?
     weak var delegate: LTDelegate?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.delegate = self as! LTDelegate
-        let selectweek = getid
-        
-                let alertController = UIAlertView()
-                alertController.title = "提示"
-                alertController.message = "你选择了\(selectweek)"
-                alertController.addButton(withTitle: "ok")
-                alertController.show()
+        self.delegate = self
+//        let selectweek = getid
+//        
+//                let alertController = UIAlertView()
+//                alertController.title = "提示"
+//                alertController.message = "你选择了\(selectweek)"
+//                alertController.addButton(withTitle: "ok")
+//                alertController.show()
         // Do any additional setup after loading the view.
     }
 

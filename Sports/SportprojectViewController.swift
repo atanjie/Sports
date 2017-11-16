@@ -62,6 +62,7 @@ class SportprojectViewController: UICollectionViewController {
         let evt = EventsDao()
          p = evt.getEvents(eve)
     }
+    var id:Int!
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.collectionView!.deselectItem(at: indexPath, animated: true)
 //        let selectweek = p[indexPath.section*2+indexPath.row].id
@@ -70,10 +71,17 @@ class SportprojectViewController: UICollectionViewController {
 //        alertController.message = "你选择了\(p[indexPath.section*2+indexPath.row].id)"
 //        alertController.addButton(withTitle: "ok")
 //        alertController.show()
-        delegate?.postValueToUpPage(str:Int(p[indexPath.section*2+indexPath.row].id) )
+        id=Int(p[indexPath.section*2+indexPath.row].id)
+        //prepare(for: eventViewController, sender: <#T##Any?#>)
         let secondViewController = eventViewController()
-        self.present(secondViewController, animated: true, completion: nil)
+        secondViewController.getid=id
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+        //self.present(secondViewController, animated: true, completion: nil)
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let EventViewController=segue.destination as! eventViewController
+        EventViewController.getid=id
     }
     
     // MARK: UICollectionViewDelegate
