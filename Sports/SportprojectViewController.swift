@@ -39,7 +39,7 @@ class SportprojectViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 4
+        return 6
     }
 
 
@@ -54,7 +54,7 @@ class SportprojectViewController: UICollectionViewController {
         return cell
     }
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print(1)
+        
     }
     
     func getdata() {
@@ -62,7 +62,7 @@ class SportprojectViewController: UICollectionViewController {
         let evt = EventsDao()
          p = evt.getEvents(eve)
     }
-    var id:Int!
+    var id:Int32!
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.collectionView!.deselectItem(at: indexPath, animated: true)
 //        let selectweek = p[indexPath.section*2+indexPath.row].id
@@ -71,12 +71,15 @@ class SportprojectViewController: UICollectionViewController {
 //        alertController.message = "你选择了\(p[indexPath.section*2+indexPath.row].id)"
 //        alertController.addButton(withTitle: "ok")
 //        alertController.show()
-        id=Int(p[indexPath.section*2+indexPath.row].id)
+        id=Int32(p[indexPath.section*2+indexPath.row].id)
         //prepare(for: eventViewController, sender: <#T##Any?#>)
         let secondViewController = eventViewController()
         secondViewController.getid=id
-        self.navigationController?.pushViewController(secondViewController, animated: true)
-        //self.present(secondViewController, animated: true, completion: nil)
+        var sb=UIStoryboard.init(name: "Main", bundle: nil)
+        var vc=sb.instantiateViewController(withIdentifier: "eventView") as! eventViewController
+        vc.getid=id
+        //self.navigationController?.pushViewController(vc, animated: true)
+        self.present(vc, animated: true, completion: nil)
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

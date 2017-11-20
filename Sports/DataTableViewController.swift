@@ -44,12 +44,8 @@ class DataTableViewController: UITableViewController {
     //分组标题
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         var text:String!
-        
-        for i in 0...10{
-          text = days[i]
-            return text
-        }
-        return "4"
+        text = days[section]
+        return text
     }
     override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         return self.days

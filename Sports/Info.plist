@@ -24,9 +24,18 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSHumanReadableCopyright</key>
+	<string></string>
+	<key>CFBundleSignature</key>
+	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
-		<string></string>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<string>armv7</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
@@ -38,23 +47,6 @@
 	<string></string>
 	<key>CFBundleDisplayName</key>
 	<string></string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<array>
-			<string>UIInterfaceOrientationPortrait</string>
-			<string>UIInterfaceOrientationLandscapeLeft</string>
-			<string>UIInterfaceOrientationLandscapeRight</string>
-		</array>
-		<string>armv7</string>
-	</array>
 	<key>NSApptransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

@@ -9,14 +9,18 @@
 import UIKit
 
 class eventViewController: UIViewController{
-    var getid:Int!
+    var getid:Int32!
     var para:paramsProtocol?
     weak var delegate: LTDelegate?
     
+    @IBOutlet weak var imginfo: UIImageView!
+    @IBOutlet weak var tittleinfo: UILabel!
+    @IBOutlet weak var txtinfo: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.delegate = self
+        self.delegate=self
+        getdata()
 //        let selectweek = getid
 //        
 //                let alertController = UIAlertView()
@@ -26,12 +30,27 @@ class eventViewController: UIViewController{
 //                alertController.show()
         // Do any additional setup after loading the view.
     }
+   
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func getdata()
+    {
+        let eve = EventsModel(getid, "", "", "", "", "")
+        let  dao = EventsDao()
+        let evente =  dao.getEvents(eve)
     
+        
+        self.tittleinfo.text = evente[0].basicInfo
+        self.txtinfo.text = evente[0].name
+        self.imginfo.image=UIImage(named: evente[0].icon!)
+        
+        
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -46,7 +65,6 @@ class eventViewController: UIViewController{
 }
 extension eventViewController: LTDelegate {
     func postValueToUpPage(str: Int) {
-        getid=str
     }
     
     

@@ -93,6 +93,7 @@ class EventsDao: UIViewController {
             if whereEvente.id != 0 {
              whereStr = whereStr + " and id = \(whereEvente.id)"
             }
+            print(whereStr)
             eve.predicate = NSPredicate(format:whereStr, "")
             let result  = try ctx.fetch(eve) as![NSManagedObject]
             for p in result{
